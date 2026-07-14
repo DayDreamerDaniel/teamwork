@@ -32,16 +32,115 @@ footer {
 /* ===========================================
    Team Members Styles (Person A)
    =========================================== */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.member-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+}
+
+.member-avatar {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.member-card h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.member-card .role {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.member-card .bio {
+    color: #666;
+    font-size: 14px;
+}
 
 
 /* ===========================================
    Skills Section Styles (Person B)
    =========================================== */
+.skills-container {
+    margin-top: 20px;
+}
+
+.skill-item {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    background: linear-gradient(90deg, #007bff, #00d4ff);
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
 
 
 /* ===========================================
    Projects Section Styles (Person C)
    =========================================== */
+<section id="projects">
+    <h2>Our Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card" data-project="1">
+            <h3>🚀 Project Alpha</h3>
+            <p>A revolutionary web application for task management.</p>
+            <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Node.js</span>
+            </div>
+            <button class="project-btn">View Details</button>
+        </div>
+        <div class="project-card" data-project="2">
+            <h3>📊 Data Dashboard</h3>
+            <p>Real-time analytics and visualization platform.</p>
+            <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">D3.js</span>
+            </div>
+            <button class="project-btn">View Details</button>
+        </div>
+        <div class="project-card" data-project="3">
+            <h3>🛒 E-Commerce API</h3>
+            <p>Scalable REST API for online stores.</p>
+            <div class="project-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+            </div>
+            <button class="project-btn">View Details</button>
+        </div>
+    </div>
+</section>
 
 
 /* ===========================================
